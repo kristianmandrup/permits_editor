@@ -12,8 +12,8 @@ Config files:
 * config/permits.yaml
 * config/user_permits.yaml
 
-Note: The public/javascripts/application.js should be updated with some jquery "magic", to have the page update when a new item is selected in the dropdown ;)   
+The goal is to make this editor work, then extract it into an engine as part of the *cancan-permits* gem :) 
+*cancan-permits* already has some infrastructure that should let it load and apply the permits configuration from these config files.
 
-The goal is to make this editor work, then extract it into an engine as part of the *cancan-permits* gem :)
 
 
