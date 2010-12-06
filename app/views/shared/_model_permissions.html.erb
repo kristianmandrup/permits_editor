@@ -1,0 +1,20 @@
+<table>
+  <tr>
+<% [:read, :write, :create].each do |action| %> 
+  <!-- can[edit][Article] -->
+  <td>
+  <%= check_box_tag "#{@type}[#{@name}][#{can_type}][#{action}][#{model}]", 1, @object.send(:"#{can_type}?", action, model)  %>
+  <%= label_tag action.to_s.humanize %>
+  </td>
+<% end %>
+</tr>
+<tr>
+<% [:update, :manage, :delete].each do |action| %>
+  <!-- can[update][Article] -->
+  <td>
+  <%= check_box_tag "#{@type}[#{@name}][#{can_type}][#{action}][#{model}]", 1, @object.send(:"#{can_type}?", action, model)  %>
+  <%= label_tag action.to_s.humanize %>        
+  </td>
+<% end %>
+</tr>
+</table>

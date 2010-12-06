@@ -1,0 +1,12 @@
+<!-- on role select update forms below -->
+<!-- Use simple form or semantic form !!! -->
+<h1><%= @object.name %></h1>
+<%= form_tag permits_path do %>
+  <!--  show drop down selection -->
+  <%= label_tag 'User' %>  
+  <%= collection_select :permit, :name, UserPermitConfig.all, :name, :name %>
+  <!-- Should auto submit on drop down selection! -->
+  <!-- reflect all permissions for all models for selected license -->
+  <%= render 'shared/permit_fields' %>
+  <%= submit_tag 'Save'%>
+<% end %>

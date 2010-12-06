@@ -1,0 +1,18 @@
+<table border="1">
+  <tr>
+    <th>Model</th>
+    <th>Can</th>
+    <th>Cannot</th>
+  </th>
+  <% @models.each do |model| %>
+  <tr>
+    <!-- Article -->
+    <td><%= model.name %></td>
+    <% [:can, :cannot].each do |can_type| %>
+      <td>    
+        <%= render 'shared/model_permissions', :model => model, :can_type => can_type %>
+      </td>
+    <% end %>    
+  </tr>
+  <% end %>    
+</table>

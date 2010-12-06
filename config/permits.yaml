@@ -1,0 +1,18 @@
+--- 
+admin: 
+  can:  
+    manage: 
+    - Article
+    - Post
+  cannot:  
+    manage: 
+    - Post
+    write: 
+    - Post
+guest: 
+  can: 
+    manage: 
+    - all
+  cannot: 
+    manage: 
+    - Article

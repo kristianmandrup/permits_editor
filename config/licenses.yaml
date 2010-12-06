@@ -1,0 +1,31 @@
+--- 
+blogging: 
+  can:  
+    manage: 
+    - Article
+    - Post
+  cannot:  
+    create: 
+    - Post
+    delete: 
+    - Article
+    manage: 
+    - Article
+    update: 
+    - Post
+    write: 
+    - Post
+admin: 
+  can: 
+    manage: 
+    - Article
+    - Post
+    write: 
+    - Post
+  cannot: 
+    create: 
+    - Post
+    delete: 
+    - Post
+    manage: 
+    - Article
