@@ -11,6 +11,9 @@ blogging:
     - Article
     manage: 
     - Article
+    - Post
+    read: 
+    - Post
     update: 
     - Post
     write: 
@@ -29,3 +32,5 @@ admin:
     - Post
     manage: 
     - Article
+    update: 
+    - Post

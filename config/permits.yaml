@@ -1,18 +1,18 @@
 --- 
 admin: 
-  can:  
+  can: 
     manage: 
     - Article
     - Post
-  cannot:  
+  cannot: 
     manage: 
     - Post
     write: 
     - Post
 guest: 
-  can: 
+  can:  
     manage: 
     - all
-  cannot: 
+  cannot:  
     manage: 
     - Article
